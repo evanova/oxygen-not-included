@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using Harmony;
+using HarmonyLib;
 
 namespace BuildingAutoSwitch {
 
-    public class BuildingAutoSwitch 
+    public sealed class BuildingAutoSwitch 
     {
         
         [HarmonyPatch(typeof(Toggleable))]
